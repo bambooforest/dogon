@@ -24,7 +24,7 @@ wordlists = ["Leipzig-Jakarta", "Swadesh-AH", "English"] # English == Dogon Basi
 for wordlist in wordlists:
     # Load the spreadsheet and specify attributes like the blacklist file and the column for concepts
     s = Spreadsheet(
-        "data/dogon_wordlists.tsv", 
+        "dogon_wordlists.tsv", 
         meanings = wordlist,
         skip_empty_concepts=False, 
         cellsep="\\\\", 
@@ -35,7 +35,7 @@ for wordlist in wordlists:
     wl.tokenize("Heath2014", column="ipa")
 
     # Write the data to an output file
-    wl.output('qlc',filename=wordlist)
+    wl.output('qlc',filename="data-no-bm/"+wordlist)
 
     # If you want some descriptive stats from the Spreadsheet dat
     # s.stats()

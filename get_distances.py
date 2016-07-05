@@ -14,7 +14,31 @@ import sys
 from lingpy import *
 from lingpy.convert.plot import *
 
+
+def get_distances(filename, method, id, threshod):
+    """
+    Output simple distance matrices given several parameters
+    """
+    output = filename+"-"+method+"-"+str(threshold)
+
+    print("[i] Loading file")
+    lex = LexStat(filename+".qlc")
+    
+    print("[i] Loading scorer")
+    lex.get_scorer(force=True)
+    lex.pickle()
+
+    print("[i] Clustering words into cognate sets")
+    lex.cluster(method=method, threshold=threshold, verbose=False)
+
+    print("[i] Writing distance matrix to disk")
+    lex.output('dst', filename=output, ref=id)
+
+
 def main(filename, method, id, threshold):
+    """
+    Method to output tress, distance matrices, etc.
+    """
     output = filename+"-"+method+"-"+str(threshold)
 
     print("[i] Loading file")
@@ -47,8 +71,10 @@ def main(filename, method, id, threshold):
 
     print("[i] Calculating trees")
     lex.calculate('dst', ref=id)
-    lex.calculate('tree', ref=id, tree_calc='neighbor')
-    
+    lex.calculate('tree', ref=id, tree_calc='neighbor', distances=True)
+    print(lex.tree)
+    sys.exit(1)
+
     print("[i] Writing distance matrix to disk")
     lex.output('dst', filename=output, ref=id)
 
@@ -72,6 +98,12 @@ if __name__=="__main__":
     ids = ["lexstatid", "editid"] # ids assigned by lingpy (why not simply cogid?)
     thresholds = [0.5, 0.6, 0.7]
 
-    main(filenames[0], methods[0], ids[0], thresholds[0])
-    print("rm -R __lingpy__/")
+    # main(filenames[0], methods[0], ids[0], thresholds[0])
+    # print("rm -R __lingpy__/")
+
+    # main(filenames[0], methods[0], ids[0], thresholds[0])
+    main(filenames[1], methods[0], ids[0], thresholds[0])
+
+
+
 

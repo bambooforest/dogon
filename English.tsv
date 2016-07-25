@@ -5583,7 +5583,8 @@ ID	CONCEPT	DOCULECT	COUNTERPART	TOKENS
 7214	or	Togo_Kan	mà	m à
 7215	or	Yorno_So	mà	m à
 7216	or	Tommo_So	mà	m à
-7217	or	Dogul_Dom	màà Y; mɛ̀nná Y	m àː # # m ɛ̀ n n á 7218	or	Yanda_Dom	mà	m à
+7217	or	Dogul_Dom	màà Y; mɛ̀nná Y	m àː # # m ɛ̀ n n á
+7218	or	Yanda_Dom	mà	m à
 7219	or	Najamba	wàlá	w à l á
 7220	or	Tiranige	mà	m à
 7221	or	Mombo	mâ:	m âː
@@ -5861,21 +5862,21 @@ ID	CONCEPT	DOCULECT	COUNTERPART	TOKENS
 3389	reciprocally, each other (more than two humans)	Tiranige	yɔ́	j ɔ́
 3390	reciprocally, each other (more than two humans)	Bunoge	gè	ɡ è
 3391	reciprocally, each other (more than two humans)	Penange	bò ŋ̀	b ò # ŋ̀
-3392	reciprocally, each other (nonhumans.inanimates, any number)	Toro_Tegu	túnǒmmà	t ú n ǒ m m à
-3393	reciprocally, each other (nonhumans.inanimates, any number)	Ben_Tey	tǔ:	t ǔː
-3394	reciprocally, each other (nonhumans.inanimates, any number)	Bankan_Tey	tǔ:	t ǔː
-3395	reciprocally, each other (nonhumans.inanimates, any number)	Nanga	tu᷈:	t u᷈ː
-3396	reciprocally, each other (nonhumans.inanimates, any number)	Perge_Tegu	tùwɔ̂m	t ù w ɔ̂ m
-3397	reciprocally, each other (nonhumans.inanimates, any number)	Togo_Kan	sàⁿ túⁿ	s àⁿ # t úⁿ
-3398	reciprocally, each other (nonhumans.inanimates, any number)	Yorno_So	tɔ́:ⁿm̀	t ɔ́ːⁿ m̀
-3399	reciprocally, each other (nonhumans.inanimates, any number)	Tommo_So	túmɔ̀m	t ú m ɔ̀ m
-3400	reciprocally, each other (nonhumans.inanimates, any number)	Tebul_Ure	tɛ̀mbɔ̌:	t ɛ̀ m b ɔ̌ː
-3401	reciprocally, each other (nonhumans.inanimates, any number)	Yanda_Dom	tòmò	t ò m ò
-3402	reciprocally, each other (nonhumans.inanimates, any number)	Tiranige	yó	j ó
-3403	reciprocally, each other (nonhumans.inanimates, any number)	Tiranige	yɔ́	j ɔ́
-3404	reciprocally, each other (nonhumans.inanimates, any number)	Mombo	kà:bù gêwⁿ	k àː b ù # ɡ ê wⁿ
-3405	reciprocally, each other (nonhumans.inanimates, any number)	Bunoge	gè	ɡ è
-3406	reciprocally, each other (nonhumans.inanimates, any number)	Penange	bò ŋ̀	b ò # ŋ̀
+3392	reciprocally, each other (nonhumans/inanimates, any number)	Toro_Tegu	túnǒmmà	t ú n ǒ m m à
+3393	reciprocally, each other (nonhumans/inanimates, any number)	Ben_Tey	tǔ:	t ǔː
+3394	reciprocally, each other (nonhumans/inanimates, any number)	Bankan_Tey	tǔ:	t ǔː
+3395	reciprocally, each other (nonhumans/inanimates, any number)	Nanga	tu᷈:	t u᷈ː
+3396	reciprocally, each other (nonhumans/inanimates, any number)	Perge_Tegu	tùwɔ̂m	t ù w ɔ̂ m
+3397	reciprocally, each other (nonhumans/inanimates, any number)	Togo_Kan	sàⁿ túⁿ	s àⁿ # t úⁿ
+3398	reciprocally, each other (nonhumans/inanimates, any number)	Yorno_So	tɔ́:ⁿm̀	t ɔ́ːⁿ m̀
+3399	reciprocally, each other (nonhumans/inanimates, any number)	Tommo_So	túmɔ̀m	t ú m ɔ̀ m
+3400	reciprocally, each other (nonhumans/inanimates, any number)	Tebul_Ure	tɛ̀mbɔ̌:	t ɛ̀ m b ɔ̌ː
+3401	reciprocally, each other (nonhumans/inanimates, any number)	Yanda_Dom	tòmò	t ò m ò
+3402	reciprocally, each other (nonhumans/inanimates, any number)	Tiranige	yó	j ó
+3403	reciprocally, each other (nonhumans/inanimates, any number)	Tiranige	yɔ́	j ɔ́
+3404	reciprocally, each other (nonhumans/inanimates, any number)	Mombo	kà:bù gêwⁿ	k àː b ù # ɡ ê wⁿ
+3405	reciprocally, each other (nonhumans/inanimates, any number)	Bunoge	gè	ɡ è
+3406	reciprocally, each other (nonhumans/inanimates, any number)	Penange	bò ŋ̀	b ò # ŋ̀
 3356	reciprocally, each other (two persons)	Toro_Tegu	túnǒmmà	t ú n ǒ m m à
 3357	reciprocally, each other (two persons)	Ben_Tey	tǔ:	t ǔː
 3358	reciprocally, each other (two persons)	Bankan_Tey	tǔ:	t ǔː

@@ -36,7 +36,7 @@ with with_temp_dir() as tmpdir:
         doculect = 'not in' +str(ignore)))
 
     wl3 = Wordlist(tmpdir.joinpath('ds.tsv').as_posix())
-    wl3.output('tsv', filename='Dogon-{0}-{1}'.format(wl3.height, wl3.width),
+    wl3.output('tsv', filename='../data/Dogon-{0}-{1}'.format(wl3.height, wl3.width),
             prettify=False)
 
 print('missing concepts not mapped in concepticon')

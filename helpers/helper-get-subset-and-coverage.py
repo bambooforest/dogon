@@ -16,7 +16,7 @@ for line in concepts[1:]:
 
 
 with with_temp_dir() as tmpdir:
-    wl = Wordlist('../data/final-wordlist.tsv')
+    wl = Wordlist('../data/final-wordlist-new-tone.tsv')
     wl.output('tsv', filename=tmpdir.joinpath('ds').as_posix(), subset=True, rows=dict(
         concept = 'in '+str(active_concepts)))
     

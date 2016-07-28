@@ -35,7 +35,7 @@ t = Tokenizer("Heath2016.prf")
 # df = pd.read_csv("per_concept.csv", index_col="ID")
 # To tokenize the already combined final data
 
-df = pd.read_csv("final-wordlist.csv", index_col="ID")
+df = pd.read_csv("final-wordlist.tsv", index_col="ID", sep="\t")
 print(df.head())
 
 """
@@ -52,6 +52,7 @@ df['TOKENS'] = pd.Series(df['COUNTERPART'].apply(tokenizer))
 df['TOKENS'] = pd.Series(df['TOKENS'].apply(tone_changer))
 df['TOKENS'] = df['TOKENS'].str.strip()
 df.to_csv('final-wordlist-new-tone.csv')
+df.to_csv('final-wordlist-new-tone.tsv', sep="\t")
 
 # Test data
 input = ""

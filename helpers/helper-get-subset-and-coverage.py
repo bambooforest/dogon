@@ -43,3 +43,21 @@ print('missing concepts not mapped in concepticon')
 for concept in inactive:
     print(concept)
 
+# exclude synonyms and put them in a variants field
+wl = Wordlist(wl3)
+variants = {}
+excludes = []
+for taxon in wl.cols:
+    word_ids = wl.get_dict(taxon=taxon)
+    words = wl.get_dict(taxon=taxon, entry='tokens')
+    for concept in wl.concepts:
+        if concept in word_ids:
+            idxs, tokens = word_ids[concept], words[concept]
+            variants[idxs[0]] = []
+            for idx, word in zip(idxs[1:], tokens[1:]):
+                variants[idxs[0]] += [' '.join(word)]
+                excludes += [idx]
+                variants[idx] = []
+wl.add_entries('variants', variants, lambda x: ' // '.join(x))
+wl.output('tsv', filename='../data/Dogon-{0}-{1}'.format(wl.height, wl.width),
+        subset=True, rows=dict(ID = 'not in '+str(excludes)))

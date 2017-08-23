@@ -137,7 +137,3 @@ rownames(unpacked) <- NULL
 ID <- rownames(unpacked)
 final <- cbind(ID, unpacked)
 write.csv(final, "data/dogon-wordlist-long.csv", row.names=F)
-
-
-
-
